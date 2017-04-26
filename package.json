@@ -7,8 +7,8 @@
     "start": "webpack-dev-server",
     "test": "karma start --single-run",
     "watch": "karma start --watch",
-    "deploy-s3": "node scripts/deploy-to-s3.js",
-    "deploy-dokku": "node scripts/deploy-to-dokku.js"
+    "deploy-demo-s3": "node scripts/deploy-to-s3.js",
+    "deploy-firebase": "node scripts/deploy-to-firebase.js"
   },
   "dependencies": {
     "offline-plugin": "^4.7.0",
