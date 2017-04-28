@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "test": "karma start --single-run",
     "watch": "karma start --watch",
-    "deploy-demo-s3": "node scripts/deploy-to-s3.js",
+    "deploy-demo": "MOCK_DATA=true yarn build && FIREBASE_PROJECT=kb-pwa-demo yarn run deploy-firebase",
     "deploy-firebase": "node scripts/deploy-to-firebase.js"
   },
   "dependencies": {
@@ -44,7 +44,6 @@
     "postcss-loader": "^1.2.2",
     "prettier": "^1.1.0",
     "promise-polyfill": "^6.0.2",
-    "s3": "^4.4.0",
     "sass-loader": "^4.1.1",
     "sinon": "^2.1.0",
     "style-loader": "^0.13.1",
