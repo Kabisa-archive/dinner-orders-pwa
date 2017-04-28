@@ -3,7 +3,7 @@
   "short_name": "Orders",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "index.html",
+  "start_url": "/",
   "background_color": "#F2F2F2",
   "theme_color": "#fe3d3d",
   "icons": [{

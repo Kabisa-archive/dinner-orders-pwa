@@ -68,11 +68,9 @@ if (isProd) {
     new OfflinePlugin({
       autoUpdate: true,
       relativePaths: true,
-      rewrites: { "/": "index.html" },
-      externals: ["/"],
       ServiceWorker: {
         output: "service-worker.js",
-        navigateFallbackURL: "index.html",
+        navigateFallbackURL: "/",
         events: true
       },
       AppCache: {
